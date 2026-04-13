@@ -1,31 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <script type="module" src="navbar.js"></script>
 <script type="module" src="footer.js"></script>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Fotografia Profissional para Negócios Locais — ASSENT AGENCIA</title>
+<title>Fotografia Profissional para NegÃ³cios Locais â€” ASSENT AGENCIA</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles/tokens.css"/>
+<link rel="stylesheet" href="styles/public-base.css"/>
 <style>
-:root{--bg:#111111;--surface:#1a1a1a;--gold:#F5A623;--gold-dark:#E09820;--white:#FFFFFF;--light-bg:#F0F0EC;--muted:#777777;--border:rgba(255,255,255,0.07);--wa:#25D366;--heading:'Montserrat',sans-serif;--body:'Inter',sans-serif;}
-*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}body{background:var(--bg);color:var(--white);font-family:var(--body);overflow-x:hidden;line-height:1.6;}
-.container{max-width:1140px;margin:0 auto;padding:0 24px;}
-.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.3);color:var(--gold);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border-radius:100px;}
-.badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);display:block;box-shadow:0 0 8px var(--gold);}
-.highlight{color:var(--gold);}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:17px 34px;border-radius:50px;font-weight:700;font-size:.92rem;cursor:pointer;text-decoration:none;transition:all .25s ease;border:none;font-family:var(--heading);letter-spacing:.06em;text-transform:uppercase;}
-.btn-primary{background:var(--gold);color:#111;box-shadow:0 0 40px rgba(245,166,35,0.3);}
-.btn-primary:hover{background:var(--gold-dark);transform:translateY(-2px);box-shadow:0 0 60px rgba(245,166,35,0.45);}
-.btn-secondary{background:transparent;color:var(--white);border:1.5px solid var(--border);}
-.btn-secondary:hover{border-color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.04);}
-.btn svg{width:18px;height:18px;flex-shrink:0;}
-.section-title{font-family:var(--heading);font-size:clamp(1.7rem,3.5vw,2.8rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;}
-.section-sub{color:var(--muted);font-size:1rem;max-width:560px;line-height:1.75;}
-.divider{width:56px;height:3px;background:var(--gold);border-radius:4px;margin:18px 0;}
-.reveal{opacity:0;transform:translateY(36px);transition:opacity .65s ease,transform .65s ease;}
-.reveal.visible{opacity:1;transform:none;}
-
 /* HERO */
 #hero{min-height:auto;display:flex;align-items:center;padding:130px 0 0;position:relative;overflow:hidden;background:#1a140a;}
 .hero-content{position:relative;z-index:3;max-width:760px;}
@@ -35,9 +19,9 @@
 .hero-sub strong{color:var(--white);}
 .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:0;padding-bottom:72px;}
 
- /* ══════════════════════════════
-       HERO — vídeo BG
-    ══════════════════════════════ */
+ /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       HERO â€” vÃ­deo BG
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .hero {
       min-height: auto;
       display: flex;
@@ -130,7 +114,7 @@
 .service-card h3{font-family:var(--heading);font-size:1.05rem;font-weight:700;margin-bottom:12px;color:#222;}
 .service-card p{color:#666;font-size:.88rem;line-height:1.7;margin-bottom:20px;}
 .service-result{display:flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;color:var(--gold-dark);}
-.service-result::before{content:'✓';font-size:.75rem;}
+.service-result::before{content:'âœ“';font-size:.75rem;}
 .services-cta{text-align:center;margin-top:48px;}
 
 /* ANTES DEPOIS SECTION */
@@ -173,7 +157,7 @@
 .urgencia-inner .section-sub{margin:0 auto 40px;text-align:center;}
 .urgency-hooks{display:flex;flex-direction:column;gap:12px;max-width:600px;margin:0 auto 40px;}
 .hook{padding:14px 22px;border:1px solid rgba(245,166,35,0.22);border-radius:10px;background:rgba(245,166,35,0.05);font-size:.91rem;color:var(--white);display:flex;align-items:center;gap:12px;}
-.hook::before{content:'📸';font-size:1rem;}
+.hook::before{content:'ðŸ“¸';font-size:1rem;}
 
 /* DIFERENCIAIS */
 #diferenciais{padding:100px 0;background:var(--light-bg);}
@@ -249,7 +233,6 @@
 </head>
 <body>
 <assent-navbar></assent-navbar>
- <assent-footer></assent-footer>
 
 <section id="hero">
 
@@ -261,15 +244,15 @@
 
   <div class="container">
     <div class="hero-content">
-      <div class="hero-badge badge reveal">📷 Fotografia profissional para negócios locais</div>
+      <div class="hero-badge badge reveal">ðŸ“· Fotografia profissional para negÃ³cios locais</div>
       <h1 class="hero-title reveal">Fotos que fazem<br>seu cliente <span class="highlight">querer comprar</span><br>antes de entrar.</h1>
-      <p class="hero-sub reveal">Seu produto é bom. Mas se a foto não transmite isso, <strong>o cliente vai embora antes de conhecer você.</strong> A gente muda isso com imagens profissionais que vendem — para restaurantes, salões, clínicas e qualquer negócio local.</p>
+      <p class="hero-sub reveal">Seu produto Ã© bom. Mas se a foto nÃ£o transmite isso, <strong>o cliente vai embora antes de conhecer vocÃª.</strong> A gente muda isso com imagens profissionais que vendem â€” para restaurantes, salÃµes, clÃ­nicas e qualquer negÃ³cio local.</p>
       <div class="hero-actions reveal">
-        <a href="https://wa.me/5562991383079?text=Olá!+Quero+saber+mais+sobre+fotografia+profissional+para+meu+negócio." class="btn btn-primary" target="_blank">
+        <a href="https://wa.me/5562991383079?text=OlÃ¡!+Quero+saber+mais+sobre+fotografia+profissional+para+meu+negÃ³cio." class="btn btn-primary" target="_blank">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Quero fotos profissionais
         </a>
-        <a href="#antes-depois" class="btn btn-secondary">Ver transformações →</a>
+        <a href="#antes-depois" class="btn btn-secondary">Ver transformaÃ§Ãµes â†’</a>
       </div>
     </div>
   </div>
@@ -278,13 +261,13 @@
 <section id="hero-stats">
   <div class="container">
     <div class="hero-stats-grid">
-      <div class="hero-stat-item"><div class="hero-stat-num"><span id="c1">0</span><span class="hero-stat-plus">%</span></div><div class="hero-stat-label">Mais cliques nos anúncios</div></div>
+      <div class="hero-stat-item"><div class="hero-stat-num"><span id="c1">0</span><span class="hero-stat-plus">%</span></div><div class="hero-stat-label">Mais cliques nos anÃºncios</div></div>
       <div class="hero-stat-sep"></div>
       <div class="hero-stat-item"><div class="hero-stat-num"><span id="c2">0</span><span class="hero-stat-plus">h</span></div><div class="hero-stat-label">Prazo de entrega</div></div>
       <div class="hero-stat-sep"></div>
-      <div class="hero-stat-item"><div class="hero-stat-num"><span id="c3">0</span><span class="hero-stat-plus">+</span></div><div class="hero-stat-label">Negócios atendidos</div></div>
+      <div class="hero-stat-item"><div class="hero-stat-num"><span id="c3">0</span><span class="hero-stat-plus">+</span></div><div class="hero-stat-label">NegÃ³cios atendidos</div></div>
       <div class="hero-stat-sep"></div>
-      <div class="hero-stat-item"><div class="hero-stat-num"><span id="c4">0</span><span class="hero-stat-plus">x</span></div><div class="hero-stat-label">Mais percepção de valor</div></div>
+      <div class="hero-stat-item"><div class="hero-stat-num"><span id="c4">0</span><span class="hero-stat-plus">x</span></div><div class="hero-stat-label">Mais percepÃ§Ã£o de valor</div></div>
     </div>
   </div>
 </section>
@@ -292,20 +275,20 @@
 <div class="marquee-bar">
   <div class="marquee-track">
     <span class="marquee-item">Restaurantes <span class="marquee-sep">|</span></span>
-    <span class="marquee-item">Salões de Beleza <span class="marquee-sep">|</span></span>
-    <span class="marquee-item">Clínicas Estéticas <span class="marquee-sep">|</span></span>
+    <span class="marquee-item">SalÃµes de Beleza <span class="marquee-sep">|</span></span>
+    <span class="marquee-item">ClÃ­nicas EstÃ©ticas <span class="marquee-sep">|</span></span>
     <span class="marquee-item">Barbearias <span class="marquee-sep">|</span></span>
     <span class="marquee-item">Pet Shops <span class="marquee-sep">|</span></span>
     <span class="marquee-item">Padarias e Cafeterias <span class="marquee-sep">|</span></span>
-    <span class="marquee-item">Moda e Vestuário <span class="marquee-sep">|</span></span>
+    <span class="marquee-item">Moda e VestuÃ¡rio <span class="marquee-sep">|</span></span>
     <span class="marquee-item">Academias <span class="marquee-sep">|</span></span>
     <span class="marquee-item">Restaurantes <span class="marquee-sep">|</span></span>
-    <span class="marquee-item">Salões de Beleza <span class="marquee-sep">|</span></span>
-    <span class="marquee-item">Clínicas Estéticas <span class="marquee-sep">|</span></span>
+    <span class="marquee-item">SalÃµes de Beleza <span class="marquee-sep">|</span></span>
+    <span class="marquee-item">ClÃ­nicas EstÃ©ticas <span class="marquee-sep">|</span></span>
     <span class="marquee-item">Barbearias <span class="marquee-sep">|</span></span>
     <span class="marquee-item">Pet Shops <span class="marquee-sep">|</span></span>
     <span class="marquee-item">Padarias e Cafeterias <span class="marquee-sep">|</span></span>
-    <span class="marquee-item">Moda e Vestuário <span class="marquee-sep">|</span></span>
+    <span class="marquee-item">Moda e VestuÃ¡rio <span class="marquee-sep">|</span></span>
     <span class="marquee-item">Academias <span class="marquee-sep">|</span></span>
   </div>
 </div>
@@ -316,37 +299,37 @@
       <div>
         <div class="badge reveal">O problema real</div>
         <div class="divider reveal" style="background:var(--gold-dark);"></div>
-        <h2 class="section-title reveal">Foto ruim <span class="highlight">afasta cliente</span> antes dele entrar no seu negócio</h2>
+        <h2 class="section-title reveal">Foto ruim <span class="highlight">afasta cliente</span> antes dele entrar no seu negÃ³cio</h2>
         <div class="dor-list">
           <div class="dor-item reveal">
             <div class="dor-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></div>
-            <div class="dor-text"><strong>O cliente decide em 3 segundos</strong><p>Antes de ler o preço ou perguntar o horário — ele já julgou pelo que viu. Se a foto não passa qualidade, você perdeu o cliente antes de qualquer conversa.</p></div>
+            <div class="dor-text"><strong>O cliente decide em 3 segundos</strong><p>Antes de ler o preÃ§o ou perguntar o horÃ¡rio â€” ele jÃ¡ julgou pelo que viu. Se a foto nÃ£o passa qualidade, vocÃª perdeu o cliente antes de qualquer conversa.</p></div>
           </div>
           <div class="dor-item reveal">
             <div class="dor-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-            <div class="dor-text"><strong>Foto de celular não convence mais</strong><p>Seus concorrentes já estão com fotografia profissional. Se o seu visual parece amador, o cliente vai escolher quem parece mais confiável — mesmo que seu serviço seja melhor.</p></div>
+            <div class="dor-text"><strong>Foto de celular nÃ£o convence mais</strong><p>Seus concorrentes jÃ¡ estÃ£o com fotografia profissional. Se o seu visual parece amador, o cliente vai escolher quem parece mais confiÃ¡vel â€” mesmo que seu serviÃ§o seja melhor.</p></div>
           </div>
           <div class="dor-item reveal">
             <div class="dor-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-            <div class="dor-text"><strong>Anúncio caro com imagem fraca = desperdício</strong><p>Você investe em tráfego pago mas a foto não converte. O problema não está no anúncio em si — está na imagem que não passa credibilidade.</p></div>
+            <div class="dor-text"><strong>AnÃºncio caro com imagem fraca = desperdÃ­cio</strong><p>VocÃª investe em trÃ¡fego pago mas a foto nÃ£o converte. O problema nÃ£o estÃ¡ no anÃºncio em si â€” estÃ¡ na imagem que nÃ£o passa credibilidade.</p></div>
           </div>
           <div class="dor-item reveal">
             <div class="dor-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-            <div class="dor-text"><strong>Feed bagunçado passa falta de profissionalismo</strong><p>Sem identidade visual consistente, seu negócio parece improviso. O cliente quer confiar em quem vai contratar — e a foto é o primeiro sinal disso.</p></div>
+            <div class="dor-text"><strong>Feed bagunÃ§ado passa falta de profissionalismo</strong><p>Sem identidade visual consistente, seu negÃ³cio parece improviso. O cliente quer confiar em quem vai contratar â€” e a foto Ã© o primeiro sinal disso.</p></div>
           </div>
         </div>
       </div>
       <div class="dor-visual reveal">
         <div style="font-family:var(--heading);font-size:1.1rem;font-weight:700;color:#222;margin-bottom:8px;">Por que fotos profissionais aumentam as vendas?</div>
-        <p style="color:#666;font-size:.88rem;line-height:1.7;margin-bottom:24px;">Negócios locais com fotografia profissional têm até 3x mais engajamento e conversão do que os que usam fotos amadoras.</p>
+        <p style="color:#666;font-size:.88rem;line-height:1.7;margin-bottom:24px;">NegÃ³cios locais com fotografia profissional tÃªm atÃ© 3x mais engajamento e conversÃ£o do que os que usam fotos amadoras.</p>
         <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:20px;">
           <div style="display:flex;align-items:center;gap:12px;"><div style="width:120px;height:8px;background:rgba(0,0,0,.08);border-radius:4px;overflow:hidden;"><div style="width:25%;height:100%;background:#ccc;border-radius:4px;"></div></div><span style="font-size:.82rem;color:#888;">Foto de celular</span></div>
           <div style="display:flex;align-items:center;gap:12px;"><div style="width:120px;height:8px;background:rgba(0,0,0,.08);border-radius:4px;overflow:hidden;"><div style="width:90%;height:100%;background:var(--gold-dark);border-radius:4px;"></div></div><span style="font-size:.82rem;color:#222;font-weight:600;">Foto profissional</span></div>
         </div>
-        <p style="text-align:center;font-size:.83rem;color:#888;">Taxa de conversão nos anúncios</p>
-        <p style="text-align:center;font-size:1.05rem;font-weight:700;color:var(--gold-dark);margin-top:8px;">📈 Até 3x mais cliques com fotos profissionais</p>
+        <p style="text-align:center;font-size:.83rem;color:#888;">Taxa de conversÃ£o nos anÃºncios</p>
+        <p style="text-align:center;font-size:1.05rem;font-weight:700;color:var(--gold-dark);margin-top:8px;">ðŸ“ˆ AtÃ© 3x mais cliques com fotos profissionais</p>
         <div style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(0,0,0,.08);">
-          <p style="color:#777;font-size:.85rem;line-height:1.7;">"Depois das fotos profissionais, clientes começaram a escolher meu restaurante pelo que viram no Instagram. Antes disso, nunca tinha acontecido." <br><strong style="color:#222;">— Carlos O., restaurante, Goiânia</strong></p>
+          <p style="color:#777;font-size:.85rem;line-height:1.7;">"Depois das fotos profissionais, clientes comeÃ§aram a escolher meu restaurante pelo que viram no Instagram. Antes disso, nunca tinha acontecido." <br><strong style="color:#222;">â€” Carlos O., restaurante, GoiÃ¢nia</strong></p>
         </div>
       </div>
     </div>
@@ -358,19 +341,19 @@
     <div class="solucao-grid">
       <div>
         <div class="process-flow">
-          <div class="process-step reveal"><div class="step-num">1</div><div class="step-body"><strong>Briefing do seu negócio</strong><p>Entendemos o que você vende, quem é seu cliente ideal e qual é o estilo visual. 15 minutos pelo WhatsApp já bastam.</p></div></div>
-          <div class="process-step reveal"><div class="step-num">2</div><div class="step-body"><strong>Sessão fotográfica profissional</strong><p>Levamos equipamento e iluminação até você — ou fazemos em estúdio. Seu produto no melhor ângulo, com a melhor luz.</p></div></div>
-          <div class="process-step reveal"><div class="step-num">3</div><div class="step-body"><strong>Edição com identidade visual</strong><p>Tratamento de cor, contraste e retoque alinhados à sua marca. Fotos prontas para usar em qualquer canal.</p></div></div>
-          <div class="process-step reveal"><div class="step-num">4</div><div class="step-body"><strong>Entrega em 24 horas</strong><p>Alta resolução para redes sociais, anúncios, cardápio digital, Google Meu Negócio e mais.</p></div></div>
+          <div class="process-step reveal"><div class="step-num">1</div><div class="step-body"><strong>Briefing do seu negÃ³cio</strong><p>Entendemos o que vocÃª vende, quem Ã© seu cliente ideal e qual Ã© o estilo visual. 15 minutos pelo WhatsApp jÃ¡ bastam.</p></div></div>
+          <div class="process-step reveal"><div class="step-num">2</div><div class="step-body"><strong>SessÃ£o fotogrÃ¡fica profissional</strong><p>Levamos equipamento e iluminaÃ§Ã£o atÃ© vocÃª â€” ou fazemos em estÃºdio. Seu produto no melhor Ã¢ngulo, com a melhor luz.</p></div></div>
+          <div class="process-step reveal"><div class="step-num">3</div><div class="step-body"><strong>EdiÃ§Ã£o com identidade visual</strong><p>Tratamento de cor, contraste e retoque alinhados Ã  sua marca. Fotos prontas para usar em qualquer canal.</p></div></div>
+          <div class="process-step reveal"><div class="step-num">4</div><div class="step-body"><strong>Entrega em 24 horas</strong><p>Alta resoluÃ§Ã£o para redes sociais, anÃºncios, cardÃ¡pio digital, Google Meu NegÃ³cio e mais.</p></div></div>
         </div>
       </div>
       <div class="solucao-content">
-        <div class="badge reveal">A solução</div>
+        <div class="badge reveal">A soluÃ§Ã£o</div>
         <div class="divider reveal"></div>
-        <h2 class="section-title reveal">A gente cuida das fotos. <span class="highlight">Você cuida do atendimento.</span></h2>
-        <p class="section-sub reveal" style="margin-top:16px;">A ASSENT AGENCIA é especializada em fotografia para negócios locais. Sabemos o que converte para restaurantes, salões, clínicas e comércios de bairro.</p>
-        <div class="quote-block reveal"><p>"Uma foto ruim afasta o cliente antes mesmo de ele entrar. Uma foto profissional já fecha a venda antes de qualquer conversa."</p><strong>— Equipe ASSENT AGENCIA</strong></div>
-        <a href="https://wa.me/5562991383079?text=Quero+fazer+fotografia+profissional+para+meu+negócio" class="btn btn-primary reveal" target="_blank" style="margin-top:36px;">Quero fotos profissionais →</a>
+        <h2 class="section-title reveal">A gente cuida das fotos. <span class="highlight">VocÃª cuida do atendimento.</span></h2>
+        <p class="section-sub reveal" style="margin-top:16px;">A ASSENT AGENCIA Ã© especializada em fotografia para negÃ³cios locais. Sabemos o que converte para restaurantes, salÃµes, clÃ­nicas e comÃ©rcios de bairro.</p>
+        <div class="quote-block reveal"><p>"Uma foto ruim afasta o cliente antes mesmo de ele entrar. Uma foto profissional jÃ¡ fecha a venda antes de qualquer conversa."</p><strong>â€” Equipe ASSENT AGENCIA</strong></div>
+        <a href="https://wa.me/5562991383079?text=Quero+fazer+fotografia+profissional+para+meu+negÃ³cio" class="btn btn-primary reveal" target="_blank" style="margin-top:36px;">Quero fotos profissionais â†’</a>
         <div style="margin-top:32px;background:var(--gold);border-radius:14px;padding:28px;" class="reveal"><p style="font-size:1.05rem;font-weight:700;color:#111;line-height:1.5;font-family:var(--heading);">Fotografia que se paga. <strong>Na primeira venda que fechar por causa das fotos.</strong></p></div>
       </div>
     </div>
@@ -382,49 +365,49 @@
     <div class="services-header reveal">
       <div class="badge">O que fotografamos</div>
       <div class="divider" style="margin:18px auto;background:var(--gold-dark);"></div>
-      <h2 class="section-title">Fotografia para <span class="highlight">cada tipo de negócio local</span></h2>
+      <h2 class="section-title">Fotografia para <span class="highlight">cada tipo de negÃ³cio local</span></h2>
       <p class="section-sub" style="margin-top:14px;">Cada nicho tem suas particularidades. A gente conhece o que funciona para cada um deles.</p>
     </div>
     <div class="services-grid">
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 2h18l-2 7H5L3 2z"/><path d="M5 9v11a2 2 0 002 2h10a2 2 0 002-2V9"/></svg></div>
         <h3>Gastronomia e Delivery</h3>
-        <p>Fotos de pratos que fazem a boca encher d'água. Luz, composição e ângulo certos para cardápio digital, iFood e redes sociais.</p>
-        <div class="service-result">Cardápio que vende por si mesmo</div>
+        <p>Fotos de pratos que fazem a boca encher d'Ã¡gua. Luz, composiÃ§Ã£o e Ã¢ngulo certos para cardÃ¡pio digital, iFood e redes sociais.</p>
+        <div class="service-result">CardÃ¡pio que vende por si mesmo</div>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-        <h3>Salões e Estética</h3>
-        <p>Antes e depois de tratamentos, ambiente do salão, profissionais em ação. Imagens que transmitem confiança antes da primeira visita.</p>
+        <h3>SalÃµes e EstÃ©tica</h3>
+        <p>Antes e depois de tratamentos, ambiente do salÃ£o, profissionais em aÃ§Ã£o. Imagens que transmitem confianÃ§a antes da primeira visita.</p>
         <div class="service-result">Agenda cheia de clientes novos</div>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-        <h3>Clínicas e Saúde</h3>
-        <p>Ambiente clínico, equipe, equipamentos e serviços fotografados para passar profissionalismo — fator decisivo na escolha do paciente.</p>
+        <h3>ClÃ­nicas e SaÃºde</h3>
+        <p>Ambiente clÃ­nico, equipe, equipamentos e serviÃ§os fotografados para passar profissionalismo â€” fator decisivo na escolha do paciente.</p>
         <div class="service-result">Credibilidade que atrai pacientes</div>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
-        <h3>Moda e Comércio</h3>
-        <p>Produtos fotografados de forma atrativa para e-commerce, redes sociais e catálogos. Imagens que fazem o cliente querer comprar.</p>
+        <h3>Moda e ComÃ©rcio</h3>
+        <p>Produtos fotografados de forma atrativa para e-commerce, redes sociais e catÃ¡logos. Imagens que fazem o cliente querer comprar.</p>
         <div class="service-result">Produto que vende mais online</div>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-        <h3>Espaços e Ambientes</h3>
-        <p>Fotografia de interiores para pet shops, academias e qualquer negócio que precisa mostrar o ambiente antes do cliente chegar.</p>
-        <div class="service-result">Ambiente que já convence antes da visita</div>
+        <h3>EspaÃ§os e Ambientes</h3>
+        <p>Fotografia de interiores para pet shops, academias e qualquer negÃ³cio que precisa mostrar o ambiente antes do cliente chegar.</p>
+        <div class="service-result">Ambiente que jÃ¡ convence antes da visita</div>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
-        <h3>Conteúdo para Redes Sociais</h3>
-        <p>Pacotes de conteúdo fotográfico pensados para feed, stories e anúncios. Dezenas de fotos prontas para usar nos próximos meses.</p>
-        <div class="service-result">Meses de conteúdo em um dia de sessão</div>
+        <h3>ConteÃºdo para Redes Sociais</h3>
+        <p>Pacotes de conteÃºdo fotogrÃ¡fico pensados para feed, stories e anÃºncios. Dezenas de fotos prontas para usar nos prÃ³ximos meses.</p>
+        <div class="service-result">Meses de conteÃºdo em um dia de sessÃ£o</div>
       </div>
     </div>
     <div class="services-cta reveal">
-      <a href="https://wa.me/5562991383079?text=Olá!+Quero+saber+mais+sobre+fotografia+para+meu+negócio." class="btn btn-primary" target="_blank" style="background:var(--gold-dark);">Quero fotografar meu negócio →</a>
+      <a href="https://wa.me/5562991383079?text=OlÃ¡!+Quero+saber+mais+sobre+fotografia+para+meu+negÃ³cio." class="btn btn-primary" target="_blank" style="background:var(--gold-dark);">Quero fotografar meu negÃ³cio â†’</a>
     </div>
   </div>
 </section>
@@ -432,9 +415,9 @@
 <section id="antes-depois">
   <div class="container">
     <div class="ad-header">
-      <div class="badge reveal" style="margin:0 auto 16px;">Transformações reais</div>
-      <h2 class="section-title reveal">Mesmo produto. <span class="highlight">Percepção completamente diferente.</span></h2>
-      <p class="section-sub reveal" style="max-width:540px;margin:14px auto 0;">Arraste o divisor e veja a diferença que a fotografia profissional faz. Adicione suas fotos reais substituindo os placeholders.</p>
+      <div class="badge reveal" style="margin:0 auto 16px;">TransformaÃ§Ãµes reais</div>
+      <h2 class="section-title reveal">Mesmo produto. <span class="highlight">PercepÃ§Ã£o completamente diferente.</span></h2>
+      <p class="section-sub reveal" style="max-width:540px;margin:14px auto 0;">Arraste o divisor e veja a diferenÃ§a que a fotografia profissional faz. Adicione suas fotos reais substituindo os placeholders.</p>
     </div>
     <div class="ad-grid reveal">
       <div class="ad-item">
@@ -444,26 +427,26 @@
             <!-- Para usar fotos reais, substitua as divs abaixo por: -->
             <!-- <img class="ba-pane before-pane" style="object-fit:cover;" src="antes.jpg" alt="antes"> -->
             <!-- <img class="ba-pane after-pane"  style="object-fit:cover;" src="depois.jpg" alt="depois"> -->
-            <div class="ba-pane before-pane"><div class="ba-pane-icon">📱</div><div class="ba-pane-text">Foto de celular</div></div>
-            <div class="ba-pane after-pane"><div class="ba-pane-icon" style="opacity:.5;">✨</div><div class="ba-pane-text" style="color:var(--gold);opacity:.7;">Foto profissional</div></div>
+            <div class="ba-pane before-pane"><div class="ba-pane-icon">ðŸ“±</div><div class="ba-pane-text">Foto de celular</div></div>
+            <div class="ba-pane after-pane"><div class="ba-pane-icon" style="opacity:.5;">âœ¨</div><div class="ba-pane-text" style="color:var(--gold);opacity:.7;">Foto profissional</div></div>
             <div class="ba-handle-line" id="ba1-line"></div>
             <div class="ba-handle-btn" id="ba1-btn"></div>
             <div class="ba-labels"><span class="ba-label antes">Antes</span><span class="ba-label depois">Depois</span></div>
           </div>
-          <p class="ba-caption">💡 Substitua os placeholders pelas suas fotos reais</p>
+          <p class="ba-caption">ðŸ’¡ Substitua os placeholders pelas suas fotos reais</p>
         </div>
       </div>
       <div class="ad-item">
-        <div class="ad-item-header"><h4>Ambiente do negócio</h4><p>Substitua pela foto do seu espaço</p></div>
+        <div class="ad-item-header"><h4>Ambiente do negÃ³cio</h4><p>Substitua pela foto do seu espaÃ§o</p></div>
         <div class="ad-slider-wrap">
           <div class="ba-comparison" id="ba2">
-            <div class="ba-pane before-pane" style="background:#181818;"><div class="ba-pane-icon">🏪</div><div class="ba-pane-text">Foto de celular</div></div>
-            <div class="ba-pane after-pane" style="background:#161408;"><div class="ba-pane-icon" style="opacity:.5;">🌟</div><div class="ba-pane-text" style="color:var(--gold);opacity:.7;">Foto profissional</div></div>
+            <div class="ba-pane before-pane" style="background:#181818;"><div class="ba-pane-icon">ðŸª</div><div class="ba-pane-text">Foto de celular</div></div>
+            <div class="ba-pane after-pane" style="background:#161408;"><div class="ba-pane-icon" style="opacity:.5;">ðŸŒŸ</div><div class="ba-pane-text" style="color:var(--gold);opacity:.7;">Foto profissional</div></div>
             <div class="ba-handle-line" id="ba2-line"></div>
             <div class="ba-handle-btn" id="ba2-btn"></div>
             <div class="ba-labels"><span class="ba-label antes">Antes</span><span class="ba-label depois">Depois</span></div>
           </div>
-          <p class="ba-caption">💡 Substitua os placeholders pelas suas fotos reais</p>
+          <p class="ba-caption">ðŸ’¡ Substitua os placeholders pelas suas fotos reais</p>
         </div>
       </div>
     </div>
@@ -475,28 +458,28 @@
     <div class="provas-header reveal">
       <div class="badge">Resultados reais</div>
       <div class="divider" style="margin:18px auto;"></div>
-      <h2 class="section-title">Negócios locais que <span class="highlight">mudaram com as fotos</span></h2>
-      <p class="section-sub" style="margin-top:14px;">O que acontece quando um negócio para de usar foto de celular e começa a se apresentar com profissionalismo.</p>
+      <h2 class="section-title">NegÃ³cios locais que <span class="highlight">mudaram com as fotos</span></h2>
+      <p class="section-sub" style="margin-top:14px;">O que acontece quando um negÃ³cio para de usar foto de celular e comeÃ§a a se apresentar com profissionalismo.</p>
     </div>
     <div class="provas-grid">
       <div class="prova-card reveal">
-        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="stars"><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span></div>
         <p>"Meu restaurante estava com mesas vazias. Depois das fotos profissionais, as reservas pelo Instagram explodiram. Triplicamos o movimento em 30 dias."</p>
-        <div class="prova-author"><div class="author-avatar" style="background:linear-gradient(135deg,#F5A623,#B8841C);">CO</div><div class="author-info"><strong>Carlos Oliveira</strong><span>Restaurante — Goiânia/GO</span></div></div>
+        <div class="prova-author"><div class="author-avatar" style="background:linear-gradient(135deg,#F5A623,#B8841C);">CO</div><div class="author-info"><strong>Carlos Oliveira</strong><span>Restaurante â€” GoiÃ¢nia/GO</span></div></div>
       </div>
       <div class="prova-card reveal">
-        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <p>"Depois da sessão com a Assent, comecei a receber clientes que disseram que escolheram meu salão pela foto do Instagram. Nunca tinha acontecido isso."</p>
-        <div class="prova-author"><div class="author-avatar" style="background:linear-gradient(135deg,#ec4899,#9d174d);">AS</div><div class="author-info"><strong>Ana Santos</strong><span>Salão de Beleza — Aparecida de Goiânia/GO</span></div></div>
+        <div class="stars"><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span></div>
+        <p>"Depois da sessÃ£o com a Assent, comecei a receber clientes que disseram que escolheram meu salÃ£o pela foto do Instagram. Nunca tinha acontecido isso."</p>
+        <div class="prova-author"><div class="author-avatar" style="background:linear-gradient(135deg,#ec4899,#9d174d);">AS</div><div class="author-info"><strong>Ana Santos</strong><span>SalÃ£o de Beleza â€” Aparecida de GoiÃ¢nia/GO</span></div></div>
       </div>
       <div class="prova-card reveal">
-        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <p>"Gastava dinheiro em anúncio mas a foto não convertia. Com as fotos profissionais, o mesmo orçamento passou a trazer 4x mais cliques para minha clínica."</p>
-        <div class="prova-author"><div class="author-avatar" style="background:linear-gradient(135deg,#10b981,#047857);">RM</div><div class="author-info"><strong>Dra. Renata Moura</strong><span>Clínica Estética — Goiânia/GO</span></div></div>
+        <div class="stars"><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span><span>â˜…</span></div>
+        <p>"Gastava dinheiro em anÃºncio mas a foto nÃ£o convertia. Com as fotos profissionais, o mesmo orÃ§amento passou a trazer 4x mais cliques para minha clÃ­nica."</p>
+        <div class="prova-author"><div class="author-avatar" style="background:linear-gradient(135deg,#10b981,#047857);">RM</div><div class="author-info"><strong>Dra. Renata Moura</strong><span>ClÃ­nica EstÃ©tica â€” GoiÃ¢nia/GO</span></div></div>
       </div>
     </div>
     <div class="numbers-bar reveal">
-      <div class="num-item"><div class="num-val"><span id="n1">0</span><sup>+</sup></div><div class="num-label">Sessões realizadas</div></div>
+      <div class="num-item"><div class="num-val"><span id="n1">0</span><sup>+</sup></div><div class="num-label">SessÃµes realizadas</div></div>
       <div class="num-item"><div class="num-val"><span id="n2">0</span><sup>h</sup></div><div class="num-label">Prazo de entrega</div></div>
       <div class="num-item"><div class="num-val"><span id="n3">0</span><sup>x</sup></div><div class="num-label">Mais engajamento</div></div>
       <div class="num-item"><div class="num-val"><span id="n4">0</span><sup>%</sup></div><div class="num-label">Clientes satisfeitos</div></div>
@@ -507,16 +490,16 @@
 <section id="urgencia">
   <div class="container">
     <div class="urgencia-inner">
-      <div class="badge reveal" style="margin:0 auto;">⚠️ Não ignore isso</div>
-      <h2 class="section-title reveal" style="margin:16px auto 20px;max-width:700px;">Seus concorrentes já estão <span class="highlight">com fotos profissionais.</span> E você?</h2>
-      <p class="section-sub reveal" style="margin:0 auto 40px;text-align:center;">Enquanto você usa foto de celular, seu concorrente está fechando vendas com imagens que convencem. Cada dia que passa é uma vantagem que eles ganham sobre você.</p>
+      <div class="badge reveal" style="margin:0 auto;">âš ï¸ NÃ£o ignore isso</div>
+      <h2 class="section-title reveal" style="margin:16px auto 20px;max-width:700px;">Seus concorrentes jÃ¡ estÃ£o <span class="highlight">com fotos profissionais.</span> E vocÃª?</h2>
+      <p class="section-sub reveal" style="margin:0 auto 40px;text-align:center;">Enquanto vocÃª usa foto de celular, seu concorrente estÃ¡ fechando vendas com imagens que convencem. Cada dia que passa Ã© uma vantagem que eles ganham sobre vocÃª.</p>
       <div class="urgency-hooks">
-        <div class="hook reveal">"Seu cliente decide pela foto antes de entrar no seu negócio"</div>
-        <div class="hook reveal">"Foto ruim desvaloriza até o melhor produto ou serviço"</div>
-        <div class="hook reveal">"Anúncio com foto profissional tem até 3x mais cliques"</div>
-        <div class="hook reveal">"Uma sessão gera conteúdo para meses de posts e anúncios"</div>
+        <div class="hook reveal">"Seu cliente decide pela foto antes de entrar no seu negÃ³cio"</div>
+        <div class="hook reveal">"Foto ruim desvaloriza atÃ© o melhor produto ou serviÃ§o"</div>
+        <div class="hook reveal">"AnÃºncio com foto profissional tem atÃ© 3x mais cliques"</div>
+        <div class="hook reveal">"Uma sessÃ£o gera conteÃºdo para meses de posts e anÃºncios"</div>
       </div>
-      <a href="https://wa.me/5562991383079?text=Quero+fazer+fotografia+profissional+para+meu+negócio" class="btn btn-primary reveal" style="font-size:1rem;padding:20px 42px;" target="_blank">Agendar minha sessão agora →</a>
+      <a href="https://wa.me/5562991383079?text=Quero+fazer+fotografia+profissional+para+meu+negÃ³cio" class="btn btn-primary reveal" style="font-size:1rem;padding:20px 42px;" target="_blank">Agendar minha sessÃ£o agora â†’</a>
     </div>
   </div>
 </section>
@@ -526,16 +509,16 @@
     <div class="reveal" style="max-width:560px;margin-bottom:16px;">
       <div class="badge">Por que a ASSENT</div>
       <div class="divider" style="background:var(--gold-dark);"></div>
-      <h2 class="section-title">Por que escolher a Assent <span class="highlight">para fotografar seu negócio</span></h2>
+      <h2 class="section-title">Por que escolher a Assent <span class="highlight">para fotografar seu negÃ³cio</span></h2>
     </div>
-    <p class="section-sub reveal" style="margin-bottom:0;color:#555;">Não somos um estúdio genérico. Somos especialistas em fotografia para negócios locais — sabemos o que o seu cliente quer ver.</p>
+    <p class="section-sub reveal" style="margin-bottom:0;color:#555;">NÃ£o somos um estÃºdio genÃ©rico. Somos especialistas em fotografia para negÃ³cios locais â€” sabemos o que o seu cliente quer ver.</p>
     <div class="diff-grid">
-      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="diff-body"><strong>Especialistas em negócio local</strong><p>Não fotografamos grandes marcas. Só restaurantes, salões, clínicas, comércios de bairro. Conhecemos o que funciona para o seu público.</p></div></div>
-      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="diff-body"><strong>Entrega em 24 horas</strong><p>Você não espera semanas. Sessão hoje, fotos amanhã — prontas para postar e usar nos anúncios imediatamente.</p></div></div>
-      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div><div class="diff-body"><strong>Fotos otimizadas para cada canal</strong><p>Instagram, anúncios, Google Meu Negócio, iFood — entregamos nos formatos certos para cada plataforma.</p></div></div>
-      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="diff-body"><strong>Integrado com gestão de tráfego</strong><p>Se você usa nosso serviço de anúncios também, suas fotos e campanhas trabalham juntas para resultado máximo.</p></div></div>
-      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="diff-body"><strong>Atendimento personalizado</strong><p>Você tem um profissional dedicado que entende o seu negócio. Não é pacote genérico — é fotografia pensada para a sua realidade.</p></div></div>
-      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div class="diff-body"><strong>Resultado garantido ou refazemos</strong><p>Se as fotos não ficarem dentro do briefing combinado, refazemos a sessão sem custo extra. Simples assim.</p></div></div>
+      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="diff-body"><strong>Especialistas em negÃ³cio local</strong><p>NÃ£o fotografamos grandes marcas. SÃ³ restaurantes, salÃµes, clÃ­nicas, comÃ©rcios de bairro. Conhecemos o que funciona para o seu pÃºblico.</p></div></div>
+      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="diff-body"><strong>Entrega em 24 horas</strong><p>VocÃª nÃ£o espera semanas. SessÃ£o hoje, fotos amanhÃ£ â€” prontas para postar e usar nos anÃºncios imediatamente.</p></div></div>
+      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div><div class="diff-body"><strong>Fotos otimizadas para cada canal</strong><p>Instagram, anÃºncios, Google Meu NegÃ³cio, iFood â€” entregamos nos formatos certos para cada plataforma.</p></div></div>
+      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="diff-body"><strong>Integrado com gestÃ£o de trÃ¡fego</strong><p>Se vocÃª usa nosso serviÃ§o de anÃºncios tambÃ©m, suas fotos e campanhas trabalham juntas para resultado mÃ¡ximo.</p></div></div>
+      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="diff-body"><strong>Atendimento personalizado</strong><p>VocÃª tem um profissional dedicado que entende o seu negÃ³cio. NÃ£o Ã© pacote genÃ©rico â€” Ã© fotografia pensada para a sua realidade.</p></div></div>
+      <div class="diff-card reveal"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><div class="diff-body"><strong>Resultado garantido ou refazemos</strong><p>Se as fotos nÃ£o ficarem dentro do briefing combinado, refazemos a sessÃ£o sem custo extra. Simples assim.</p></div></div>
     </div>
   </div>
 </section>
@@ -545,17 +528,17 @@
     <div class="processo-header reveal">
       <div class="badge">Como funciona</div>
       <div class="divider" style="margin:18px auto;"></div>
-      <h2 class="section-title">Da sessão às fotos prontas <span class="highlight">em menos de 24h</span></h2>
-      <p class="section-sub" style="margin:14px auto 0;">Simples, rápido e sem burocracia. Você só precisa mostrar o que vende — o resto é com a gente.</p>
+      <h2 class="section-title">Da sessÃ£o Ã s fotos prontas <span class="highlight">em menos de 24h</span></h2>
+      <p class="section-sub" style="margin:14px auto 0;">Simples, rÃ¡pido e sem burocracia. VocÃª sÃ³ precisa mostrar o que vende â€” o resto Ã© com a gente.</p>
     </div>
     <div class="steps-row">
-      <div class="step-block reveal"><div class="step-circle"><div class="step-circle-num">1</div></div><h4>Briefing rápido</h4><p>Você nos conta sobre o negócio e o que quer fotografar. 15 minutos pelo WhatsApp.</p></div>
-      <div class="step-block reveal"><div class="step-circle"><div class="step-circle-num">2</div></div><h4>Sessão fotográfica</h4><p>Fotografamos no seu espaço ou em estúdio. Trazemos tudo — luz, fundo, equipamento.</p></div>
-      <div class="step-block reveal"><div class="step-circle"><div class="step-circle-num">3</div></div><h4>Edição profissional</h4><p>Retoque, cor e tratamento alinhados à sua identidade visual.</p></div>
+      <div class="step-block reveal"><div class="step-circle"><div class="step-circle-num">1</div></div><h4>Briefing rÃ¡pido</h4><p>VocÃª nos conta sobre o negÃ³cio e o que quer fotografar. 15 minutos pelo WhatsApp.</p></div>
+      <div class="step-block reveal"><div class="step-circle"><div class="step-circle-num">2</div></div><h4>SessÃ£o fotogrÃ¡fica</h4><p>Fotografamos no seu espaÃ§o ou em estÃºdio. Trazemos tudo â€” luz, fundo, equipamento.</p></div>
+      <div class="step-block reveal"><div class="step-circle"><div class="step-circle-num">3</div></div><h4>EdiÃ§Ã£o profissional</h4><p>Retoque, cor e tratamento alinhados Ã  sua identidade visual.</p></div>
       <div class="step-block reveal"><div class="step-circle"><div class="step-circle-num">4</div></div><h4>Entrega em 24h</h4><p>Fotos no formato certo para cada canal. Prontas para usar no dia seguinte.</p></div>
     </div>
     <div style="text-align:center;margin-top:56px;" class="reveal">
-      <a href="https://wa.me/5562991383079?text=Quero+agendar+uma+sessão+fotográfica+para+meu+negócio" class="btn btn-primary" target="_blank" style="font-size:1rem;padding:18px 40px;">Agendar minha sessão →</a>
+      <a href="https://wa.me/5562991383079?text=Quero+agendar+uma+sessÃ£o+fotogrÃ¡fica+para+meu+negÃ³cio" class="btn btn-primary" target="_blank" style="font-size:1rem;padding:18px 40px;">Agendar minha sessÃ£o â†’</a>
     </div>
   </div>
 </section>
@@ -564,19 +547,19 @@
   <div class="container">
     <div class="faq-grid">
       <div>
-        <div class="badge reveal">Dúvidas frequentes</div>
+        <div class="badge reveal">DÃºvidas frequentes</div>
         <div class="divider reveal" style="background:var(--gold-dark);"></div>
         <h2 class="section-title reveal">Perguntas que <span class="highlight">todo dono</span> faz antes de fotografar</h2>
-        <p class="section-sub reveal" style="margin-top:16px;">Respondemos tudo com honestidade — inclusive quando a resposta não é a que você quer ouvir.</p>
-        <a href="https://wa.me/5562991383079?text=Tenho+dúvidas+sobre+fotografia+profissional+para+meu+negócio" class="btn btn-primary reveal" style="margin-top:32px;background:var(--gold-dark);" target="_blank">Tirar dúvida pelo WhatsApp →</a>
+        <p class="section-sub reveal" style="margin-top:16px;">Respondemos tudo com honestidade â€” inclusive quando a resposta nÃ£o Ã© a que vocÃª quer ouvir.</p>
+        <a href="https://wa.me/5562991383079?text=Tenho+dÃºvidas+sobre+fotografia+profissional+para+meu+negÃ³cio" class="btn btn-primary reveal" style="margin-top:32px;background:var(--gold-dark);" target="_blank">Tirar dÃºvida pelo WhatsApp â†’</a>
       </div>
       <div class="faq-list">
-        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Quanto custa a sessão fotográfica?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Os valores variam conforme tipo de sessão, quantidade de fotos e local. Entre em contato pelo WhatsApp para um orçamento personalizado — sem compromisso.</p></div></div>
-        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Vocês vêm até meu negócio ou preciso ir ao estúdio?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>As duas opções estão disponíveis. Para fotografia de ambiente vamos até você com equipamento completo. Para produtos menores, o estúdio pode ser mais adequado. Definimos juntos o que faz mais sentido.</p></div></div>
-        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Em quanto tempo recebo as fotos?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Entregamos as fotos editadas em até 24 horas após a sessão. Em grandes volumes, pode ser até 48 horas — informamos antes.</p></div></div>
-        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">As fotos servem para anúncios pagos?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Sim! As fotos são entregues nos formatos ideais para Instagram, Facebook, Google Meu Negócio, iFood e outros. Se você usa nosso serviço de tráfego pago também, integramos direto nas campanhas.</p></div></div>
-        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Preciso me preparar para a sessão?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Fazemos um briefing antes da sessão para orientar o que preparar. É simples e a gente guia tudo. Você só precisa ter o produto ou espaço pronto para aparecer bem.</p></div></div>
-        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Funciona para meu tipo de negócio?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Se você tem algo para mostrar ao cliente — produto, serviço, ambiente ou equipe — fotografia profissional vai funcionar. Atendemos restaurantes, salões, clínicas, pet shops, academias, comércio de bairro e muito mais.</p></div></div>
+        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Quanto custa a sessÃ£o fotogrÃ¡fica?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Os valores variam conforme tipo de sessÃ£o, quantidade de fotos e local. Entre em contato pelo WhatsApp para um orÃ§amento personalizado â€” sem compromisso.</p></div></div>
+        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">VocÃªs vÃªm atÃ© meu negÃ³cio ou preciso ir ao estÃºdio?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>As duas opÃ§Ãµes estÃ£o disponÃ­veis. Para fotografia de ambiente vamos atÃ© vocÃª com equipamento completo. Para produtos menores, o estÃºdio pode ser mais adequado. Definimos juntos o que faz mais sentido.</p></div></div>
+        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Em quanto tempo recebo as fotos?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Entregamos as fotos editadas em atÃ© 24 horas apÃ³s a sessÃ£o. Em grandes volumes, pode ser atÃ© 48 horas â€” informamos antes.</p></div></div>
+        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">As fotos servem para anÃºncios pagos?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Sim! As fotos sÃ£o entregues nos formatos ideais para Instagram, Facebook, Google Meu NegÃ³cio, iFood e outros. Se vocÃª usa nosso serviÃ§o de trÃ¡fego pago tambÃ©m, integramos direto nas campanhas.</p></div></div>
+        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Preciso me preparar para a sessÃ£o?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Fazemos um briefing antes da sessÃ£o para orientar o que preparar. Ã‰ simples e a gente guia tudo. VocÃª sÃ³ precisa ter o produto ou espaÃ§o pronto para aparecer bem.</p></div></div>
+        <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)">Funciona para meu tipo de negÃ³cio?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p>Se vocÃª tem algo para mostrar ao cliente â€” produto, serviÃ§o, ambiente ou equipe â€” fotografia profissional vai funcionar. Atendemos restaurantes, salÃµes, clÃ­nicas, pet shops, academias, comÃ©rcio de bairro e muito mais.</p></div></div>
       </div>
     </div>
   </div>
@@ -591,22 +574,22 @@
   </div>
   <div class="container">
     <div class="cta-card reveal">
-      <div class="badge" style="margin:0 auto 24px;">Pronto para transformar seu negócio?</div>
+      <div class="badge" style="margin:0 auto 24px;">Pronto para transformar seu negÃ³cio?</div>
       <h2 class="section-title">Fotos que fazem seu cliente <span class="highlight">querer comprar antes de entrar.</span></h2>
-      <p class="section-sub" style="margin:16px auto 40px;text-align:center;">Entrega em 24 horas. Sem contrato longo. Resultado que você vê nos anúncios e nas redes sociais desde o primeiro post.</p>
+      <p class="section-sub" style="margin:16px auto 40px;text-align:center;">Entrega em 24 horas. Sem contrato longo. Resultado que vocÃª vÃª nos anÃºncios e nas redes sociais desde o primeiro post.</p>
       <div class="cta-buttons">
-        <a href="https://wa.me/5562991383079?text=Olá!+Quero+agendar+uma+sessão+fotográfica+para+meu+negócio." class="btn btn-primary" target="_blank" style="font-size:1rem;padding:20px 36px;">
+        <a href="https://wa.me/5562991383079?text=OlÃ¡!+Quero+agendar+uma+sessÃ£o+fotogrÃ¡fica+para+meu+negÃ³cio." class="btn btn-primary" target="_blank" style="font-size:1rem;padding:20px 36px;">
           <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Agendar minha sessão agora
+          Agendar minha sessÃ£o agora
         </a>
-        <a href="https://wa.me/5562991383079?text=Olá!+Quero+saber+mais+sobre+fotografia+para+negócios." class="btn btn-secondary" target="_blank">Ver mais informações</a>
+        <a href="https://wa.me/5562991383079?text=OlÃ¡!+Quero+saber+mais+sobre+fotografia+para+negÃ³cios." class="btn btn-secondary" target="_blank">Ver mais informaÃ§Ãµes</a>
       </div>
-      <p class="cta-note">✓ Entrega em 24h &nbsp;·&nbsp; ✓ Fotos para todos os canais &nbsp;·&nbsp; ✓ Sem contrato de fidelidade</p>
+      <p class="cta-note">âœ“ Entrega em 24h &nbsp;Â·&nbsp; âœ“ Fotos para todos os canais &nbsp;Â·&nbsp; âœ“ Sem contrato de fidelidade</p>
     </div>
   </div>
 </section>
 
-<assent-footer wa-text="Olá! Vim pelo site da Assent Agência e gostaria de saber mais sobre fotografia profissional."></assent-footer>
+<assent-footer wa-text="OlÃ¡! Vim pelo site da Assent AgÃªncia e gostaria de saber mais sobre fotografia profissional."></assent-footer>
 
 <script>
 function initSlider(cardId,lineId,btnId){
