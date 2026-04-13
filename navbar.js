@@ -411,7 +411,7 @@ class AssentNavbar extends HTMLElement {
                       <span class="ddesc">Anúncios estratégicos para empresas que querem resultados previsíveis.</span>
                     </div>
                   </a>
-                  <a href="aplicativos.html" class="ditem">
+                  <a href="./aplicativos.html" class="ditem">
                     <div class="dicon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="5" y="2" width="14" height="20" rx="2"/>
@@ -423,7 +423,7 @@ class AssentNavbar extends HTMLElement {
                       <span class="ddesc">Soluções digitais personalizadas para escalar o seu negócio.</span>
                     </div>
                   </a>
-                  <a href="fotografia.html" class="ditem">
+                  <a href="./fotografia.html" class="ditem">
                     <div class="dicon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="2" y="7" width="20" height="14" rx="2"/>
