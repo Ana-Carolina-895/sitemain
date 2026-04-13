@@ -400,7 +400,7 @@ class AssentNavbar extends HTMLElement {
                   </span>
                 </button>
                 <div class="dropdown">
-                  <a href="/trafego" class="ditem">
+                  <a href="trafego.html" class="ditem">
                     <div class="dicon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 3h18v4L12 17 3 7V3z"/>
@@ -411,7 +411,7 @@ class AssentNavbar extends HTMLElement {
                       <span class="ddesc">Anúncios estratégicos para empresas que querem resultados previsíveis.</span>
                     </div>
                   </a>
-                  <a href="/aplicativos" class="ditem">
+                  <a href="aplicativos.html" class="ditem">
                     <div class="dicon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="5" y="2" width="14" height="20" rx="2"/>
@@ -423,7 +423,7 @@ class AssentNavbar extends HTMLElement {
                       <span class="ddesc">Soluções digitais personalizadas para escalar o seu negócio.</span>
                     </div>
                   </a>
-                  <a href="/fotografia" class="ditem">
+                  <a href="fotografia.html" class="ditem">
                     <div class="dicon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="2" y="7" width="20" height="14" rx="2"/>
@@ -438,9 +438,9 @@ class AssentNavbar extends HTMLElement {
                   </a>
                 </div>
               </li>
-              <li><a href="/#provas">Resultados</a></li>
-              <li><a href="/#processo">Como Funciona</a></li>
-              <li><a href="/#faq">Dúvidas</a></li>
+              <li><a href="index.html#provas">Resultados</a></li>
+              <li><a href="index.html#processo">Como Funciona</a></li>
+              <li><a href="index.html#faq">Dúvidas</a></li>
             </ul>
 
             <!-- AUTH ÁREA — preenchida dinamicamente pelo _updateAuthUI -->
@@ -456,12 +456,12 @@ class AssentNavbar extends HTMLElement {
           </div>
 
           <div class="mobile-menu" id="mobileMenu">
-            <a href="/trafego">Tráfego Pago</a>
-            <a href="/aplicativos">Aplicativos</a>
-            <a href="/fotografia">Fotografia</a>
-            <a href="/#provas">Resultados</a>
-            <a href="/#processo">Como Funciona</a>
-            <a href="/#faq">Dúvidas</a>
+            <a href="trafego.html">Tráfego Pago</a>
+            <a href="aplicativos.html">Aplicativos</a>
+            <a href="fotografia.html">Fotografia</a>
+            <a href="index.html#provas">Resultados</a>
+            <a href="index.html#processo">Como Funciona</a>
+            <a href="index.html#faq">Dúvidas</a>
             <!-- AUTH mobile — preenchida dinamicamente -->
             <div id="mobileAuthArea"></div>
             <a href="https://wa.me/5562991383079?text=Olá!" class="mobile-cta" target="_blank">Análise Gratuita</a>
@@ -516,7 +516,7 @@ class AssentNavbar extends HTMLElement {
 
         // Desktop: avatar + botão sair
         authArea.innerHTML = `
-          <a href="/membros" class="nav-auth-avatar" title="Minha conta">${avatarHTML}</a>
+          <a href="membros.html" class="nav-auth-avatar" title="Minha conta">${avatarHTML}</a>
           <button class="nav-logout" id="navLogoutBtn">Sair</button>
         `;
         this.shadowRoot.getElementById('navLogoutBtn')
@@ -525,7 +525,7 @@ class AssentNavbar extends HTMLElement {
         // Mobile: minha conta + sair
         mobileAuthArea.innerHTML = `
           <div class="mobile-auth-sep"></div>
-          <a href="/membros">Minha Conta</a>
+          <a href="membros.html">Minha Conta</a>
           <button class="mobile-logout-btn" id="mobileLogoutBtn">Sair da conta</button>
         `;
         const mobileLogout = this.shadowRoot.getElementById('mobileLogoutBtn');
@@ -539,12 +539,12 @@ class AssentNavbar extends HTMLElement {
 
       } else {
         // Desktop: link de login
-        authArea.innerHTML = `<a href="/membros" class="nav-login-link">Login / Cadastrar-se</a>`;
+        authArea.innerHTML = `<a href="membros.html" class="nav-login-link">Login / Cadastrar-se</a>`;
 
         // Mobile: link de login
         mobileAuthArea.innerHTML = `
           <div class="mobile-auth-sep"></div>
-          <a href="/membros">Login / Cadastrar-se</a>
+          <a href="membros.html">Login / Cadastrar-se</a>
         `;
       }
     };
