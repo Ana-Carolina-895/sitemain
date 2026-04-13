@@ -208,14 +208,14 @@ class AssentFooter extends HTMLElement {
     footer.innerHTML = `
       <div class="ft-container">
         <div class="ft-inner">
-          <a href="/index.html" class="ft-logo">ASSENT <span>AGÊNCIA</span></a>
+          <a href="index.html" class="ft-logo">ASSENT <span>AGÊNCIA</span></a>
           <nav class="ft-links">
-            <a href="/trafego.html">Tráfego Pago</a>
-            <a href="/aplicativos.html">Aplicativos</a>
-            <a href="/fotografia.html">Fotografia</a>
-            <a href="/index.html#provas">Resultados</a>
-            <a href="/index.html#processo">Como Funciona</a>
-            <a href="/index.html#faq">FAQ</a>
+            <a href="trafego.html">Tráfego Pago</a>
+            <a href="aplicativos.html">Aplicativos</a>
+            <a href="fotografia.html">Fotografia</a>
+            <a href="index.html#provas">Resultados</a>
+            <a href="index.html#processo">Como Funciona</a>
+            <a href="index.html#faq">FAQ</a>
           </nav>
           <div class="ft-social">
             <a href="${ASSENT_CONTACT.instagramUrl}" target="_blank" rel="noopener" aria-label="Instagram">
