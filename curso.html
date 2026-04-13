@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <script type="module" src="navbar.js"></script>
-<script type="module" src="footer.js"></script>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Curso — ASSENT AGÊNCIA</title>
-<script type="module" src="/navbar.js"></script>
+<script type="module" src="navbar.js"></script>
 <!--
   curso.html — ASSENT Agência
   ───────────────────────────
@@ -14,7 +12,6 @@
   Estrutura Firestore: cursos/{id}/aulas (subcoleção, ordenada por `ordem`)
   Requer: navbar.js (auth + Firebase helpers)
 -->
-<script type="module" src="/navbar.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
 <style>
@@ -327,7 +324,6 @@ body{
 </head>
 <body>
 <assent-navbar></assent-navbar>
-  <assent-footer></assent-footer>
 <!-- Loading -->
 <div id="loading-screen">
   <div class="loading-logo">ASSENT <span>CURSOS</span></div>
@@ -341,7 +337,7 @@ body{
   <div class="erro-icon" id="erro-icon">⚠️</div>
   <div class="erro-title" id="erro-title">Curso não encontrado</div>
   <div class="erro-sub" id="erro-sub">O curso que você tentou acessar não existe ou foi removido.</div>
-  <a href="/cursos" class="btn-voltar-lista">← Voltar aos cursos</a>
+  <a href="cursos.html" class="btn-voltar-lista">← Voltar aos cursos</a>
 </div>
 
 <!-- ══════════════════════════════════════
@@ -351,7 +347,7 @@ body{
 
   <!-- Header fixo do player -->
   <div class="player-header">
-    <a href="/cursos" class="btn-back">
+    <a href="cursos.html" class="btn-back">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
       Cursos
     </a>
