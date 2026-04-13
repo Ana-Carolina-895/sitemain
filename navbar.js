@@ -400,7 +400,7 @@ class AssentNavbar extends HTMLElement {
                   </span>
                 </button>
                 <div class="dropdown">
-                  <a href="trafego.html" class="ditem">
+                  <a href="./trafego.html" class="ditem">
                     <div class="dicon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 3h18v4L12 17 3 7V3z"/>
